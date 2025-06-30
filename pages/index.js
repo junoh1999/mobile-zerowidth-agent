@@ -365,15 +365,15 @@ onClick={() => {
     }}
     style={{
       position: "absolute",
-      top: "15px", // Move slightly away from iframe edge
-      right: "15px", // Move slightly away from iframe edge
+      top: "0px", // Move slightly away from iframe edge
+      right: "0px", // Move slightly away from iframe edge
       background: "transparent",
       border: "none",
       color: "#FFFFFF",
       cursor: "pointer",
       fontSize: "18px",
       lineHeight: "1",
-      padding: "6px", // Larger tap target for mobile
+      padding: "0px", // Larger tap target for mobile
       borderRadius: "50%",
       width: "32px", // Slightly larger for mobile
       height: "32px",
@@ -523,9 +523,9 @@ onClick={() => {
         onMouseLeave={() => setIsSubmitHovered(false)}
         style={{
           position: "absolute",
-          right: "6px", // Position on the right side of input
-          width: "16px",
-          height: "16px", 
+          right: "4px", // Position on the right side of input
+          width: "18px",
+          height: "18px", 
           backgroundColor: isSubmitHovered ? "#818181" : "#000000",
           borderRadius: "4px",
           display: "flex",
