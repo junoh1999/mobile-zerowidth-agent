@@ -281,8 +281,8 @@ const shouldExpand = isHovered || isExpanded;
       <div style={{
   display: "flex",
   justifyContent: "flex-end",
-  paddingRight: "22px",
-  marginBottom: "3px",
+  paddingRight: "12px",
+  marginBottom: "5px",
   height: "16px", // Fixed height to prevent layout shift
   alignItems: "baseline"
 }}>
@@ -335,7 +335,7 @@ const shouldExpand = isHovered || isExpanded;
     justifyContent: "space-between",
     minHeight: "80px",
     width: shouldExpand ? "260px" : "180px",
-    marginLeft: shouldExpand ? "0px" : "220px", // Add this - pushes smaller version to the right
+    marginLeft: shouldExpand ? "140px" : "220px", // Add this - pushes smaller version to the right
     transition: "width 300ms ease, margin-left 300ms ease", // Animate both
     position: "relative",
     boxSizing: "border-box", // ADD THIS LINE
@@ -510,7 +510,7 @@ onClick={() => {
           borderRadius: "0.428rem",
           border: "none",
           outline: "none",
-          fontSize: "14px",
+          fontSize: "10.5px",
           backgroundColor: "#FFFFFF",
           boxSizing: "border-box",
           letterSpacing: "0em", // 0% horizontal spacing
@@ -527,7 +527,7 @@ onClick={() => {
           width: "16px",
           height: "16px", 
           backgroundColor: isSubmitHovered ? "#818181" : "#000000",
-          borderRadius: "0.75em",
+          borderRadius: "4px",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -543,8 +543,8 @@ onClick={() => {
             src="/arrow_upward.svg" 
             alt="Submit" 
             style={{ 
-              width: "10px", 
-              height: "10px" 
+              width: "12px", 
+              height: "12px" 
             }} 
           />
         )}
