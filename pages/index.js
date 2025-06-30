@@ -561,7 +561,7 @@ onClick={() => {
         style={{
           position: "relative",
           height: "50px",
-          marginTop: "18px",
+          marginTop: "11px",
           display: "flex",
           justifyContent: "flex-end",
           alignItems: "flex-start",
@@ -588,14 +588,14 @@ onClick={() => {
             position: "absolute",
             width: "18px",
             height: "18px",
-            right:"21%",
+            right:"19%",
             top:"35px",
             borderRadius: "50%",
             backgroundColor: "#000",
             opacity: (!isLoading || [3, 4].includes(loadingStep)) ? 1 : 0,
             transition: "opacity 0.2s ease-in-out",
             marginRight: "5px",
-            marginTop: "5px",
+            marginTop: "0px",
           }}
         ></div>
       </div>
