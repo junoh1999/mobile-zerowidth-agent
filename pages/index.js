@@ -588,7 +588,7 @@ onClick={() => {
             position: "absolute",
             width: "18px",
             height: "18px",
-            right:"21%",
+            right:"20%",
             top:"35px",
             borderRadius: "50%",
             backgroundColor: "#000",
