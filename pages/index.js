@@ -282,7 +282,7 @@ const shouldExpand = isHovered || isExpanded;
   display: "flex",
   justifyContent: "flex-end",
   paddingRight: "12px",
-  marginBottom: "8px",
+  marginBottom: "14px",
   height: "16px", // Fixed height to prevent layout shift
   alignItems: "baseline"
 }}>
@@ -371,7 +371,7 @@ onClick={() => {
       border: "none",
       color: "#FFFFFF",
       cursor: "pointer",
-      fontSize: "18px",
+      fontSize: "22px",
       lineHeight: "1",
       padding: "0px", // Larger tap target for mobile
       borderRadius: "50%",
@@ -403,7 +403,7 @@ onClick={() => {
     //marginBottom: "10px",
     display: "flex",
     alignItems: "center",
-    gap: "4px", // Space between logo and text
+    gap: "8px", // Space between logo and text
     fontFamily: "Inter, sans-serif",
     letterSpacing: "0.04em", // 4% horizontal spacing
     lineHeight: "150%",
@@ -524,8 +524,8 @@ onClick={() => {
         style={{
           position: "absolute",
           right: "4px", // Position on the right side of input
-          width: "21px",
-          height: "21px", 
+          width: "25px",
+          height: "25px", 
           backgroundColor: isSubmitHovered ? "#818181" : "#000000",
           borderRadius: "4px",
           display: "flex",
