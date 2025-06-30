@@ -365,7 +365,7 @@ onClick={() => {
     }}
     style={{
       position: "absolute",
-      top: "0px", // Move slightly away from iframe edge
+      top: "6px", // Move slightly away from iframe edge
       right: "0px", // Move slightly away from iframe edge
       background: "transparent",
       border: "none",
@@ -571,7 +571,7 @@ onClick={() => {
         <div
           style={{
             position: "absolute",
-            right:"5%",
+            right:"12%",
             width: "28px",
             height: "28px",
             borderRadius: "50%",
@@ -588,7 +588,7 @@ onClick={() => {
             position: "absolute",
             width: "18px",
             height: "18px",
-            right:"8%",
+            right:"17%",
             top:"35px",
             borderRadius: "50%",
             backgroundColor: "#000",
