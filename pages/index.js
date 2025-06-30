@@ -334,8 +334,8 @@ const shouldExpand = isHovered || isExpanded;
     flexDirection: "column",
     justifyContent: "space-between",
     minHeight: "80px",
-    width: shouldExpand ? "350px" : "240px",
-    marginLeft: shouldExpand ? "50px" : "160px", // Add this - pushes smaller version to the right
+    width: shouldExpand ? "280px" : "240px",
+    marginLeft: shouldExpand ? "120px" : "160px", // Add this - pushes smaller version to the right
     transition: "width 300ms ease, margin-left 300ms ease", // Animate both
     position: "relative",
     boxSizing: "border-box", // ADD THIS LINE
