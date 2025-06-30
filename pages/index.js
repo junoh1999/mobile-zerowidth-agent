@@ -413,8 +413,8 @@ onClick={() => {
     src="/sparkle.svg" 
     alt="Sparkle" 
     style={{ 
-      width: "14px", 
-      height: "14px" 
+      width: "16px", 
+      height: "16px" 
     }} 
   />
           Ask my AI self...
@@ -543,8 +543,8 @@ onClick={() => {
             src="/arrow_upward.svg" 
             alt="Submit" 
             style={{ 
-              width: "12px", 
-              height: "12px" 
+              width: "14px", 
+              height: "14px" 
             }} 
           />
         )}
