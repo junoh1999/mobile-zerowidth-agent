@@ -571,7 +571,7 @@ onClick={() => {
         <div
           style={{
             position: "absolute",
-            right:"22%",
+            right:"5%",
             width: "28px",
             height: "28px",
             borderRadius: "50%",
@@ -588,7 +588,7 @@ onClick={() => {
             position: "absolute",
             width: "18px",
             height: "18px",
-            right:"38%",
+            right:"8%",
             top:"35px",
             borderRadius: "50%",
             backgroundColor: "#000",
