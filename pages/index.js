@@ -523,7 +523,7 @@ onClick={() => {
         onMouseLeave={() => setIsSubmitHovered(false)}
         style={{
           position: "absolute",
-          right: "2px", // Position on the right side of input
+          right: "4px", // Position on the right side of input
           width: "21px",
           height: "21px", 
           backgroundColor: isSubmitHovered ? "#818181" : "#000000",
