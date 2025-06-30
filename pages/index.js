@@ -283,17 +283,17 @@ const shouldExpand = isHovered || isExpanded;
   justifyContent: "flex-end",
   paddingRight: "22px",
   marginBottom: "3px",
-  height: "30px", // Fixed height to prevent layout shift
+  height: "16px", // Fixed height to prevent layout shift
   alignItems: "baseline"
 }}>
   <div style={{ 
-    fontSize: "14px", 
+    fontSize: "10.5px", 
     padding: "0px 0px", 
     margin: "0px 0px", 
     marginRight: "0px", // Adjust this value to change spacing between "Try:" and button
     fontStyle: "italic",
     letterSpacing: "0.08em", // 8% horizontal spacing
-  lineHeight: "150%",
+  lineHeight: "125%",
   }}>
     Try:
   </div>
@@ -307,16 +307,16 @@ const shouldExpand = isHovered || isExpanded;
         backgroundColor: "#FFFFFF",
         border: "none",
         borderRadius: "0.75em", 
-        padding: "0 0 0px 6px", // Reduce this value to make button smaller
+        padding: "0 0 0px 3px", // Reduce this value to make button smaller
         margin: "0px 0px",
-        fontSize: "14px",
+        fontSize: "10.5px",
         cursor: "pointer",
         opacity: promptVisible ? 1 : 0,
         transition: "opacity 0.5s ease, color 300ms ease",
         whiteSpace: "nowrap",
         color: isSuggestionHovered ? "#818181" : "#000000",
         letterSpacing: "0.08em", // 8% horizontal spacing
-       lineHeight: "150%",
+       lineHeight: "125%",
       }}
     >
       {chatConfig.suggestedPrompts[currentPromptIndex]}
@@ -327,15 +327,15 @@ const shouldExpand = isHovered || isExpanded;
       <div
   style={{
     backgroundColor: "#000000",
-    borderRadius: "16px",
-    padding: "18px",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+    borderRadius: "12px",
+    padding: "12px",
+    boxShadow: "0 3px 5px rgba(0, 0, 0, 0.1)",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
     minHeight: "80px",
-    width: shouldExpand ? "400px" : "280px",
-    marginLeft: shouldExpand ? "0px" : "120px", // Add this - pushes smaller version to the right
+    width: shouldExpand ? "260px" : "180px",
+    marginLeft: shouldExpand ? "0px" : "80px", // Add this - pushes smaller version to the right
     transition: "width 300ms ease, margin-left 300ms ease", // Animate both
     position: "relative",
     boxSizing: "border-box", // ADD THIS LINE
@@ -398,12 +398,12 @@ onClick={() => {
                <div
   style={{
     color: "#FFFFFF",
-    fontSize: "16px",
+    fontSize: "12px",
     fontWeight: "bold",
     //marginBottom: "10px",
     display: "flex",
     alignItems: "center",
-    gap: "7px", // Space between logo and text
+    gap: "4px", // Space between logo and text
     fontFamily: "Inter, sans-serif",
     letterSpacing: "0.04em", // 4% horizontal spacing
     lineHeight: "150%",
@@ -413,8 +413,8 @@ onClick={() => {
     src="/sparkle.svg" 
     alt="Sparkle" 
     style={{ 
-      width: "18px", 
-      height: "18px" 
+      width: "14px", 
+      height: "14px" 
     }} 
   />
           Ask my AI self...
@@ -425,12 +425,12 @@ onClick={() => {
     style={{
       display: "flex",
       flexDirection: "column",
-      gap: "10px",
-      marginTop: "10px",
-      marginBottom: "10px",
+      gap: "7px",
+      marginTop: "7px",
+      marginBottom: "7px",
       flexGrow: 1,
       overflowY: "auto",
-      maxHeight: conversation.length > 0 ? "150px" : "0",
+      maxHeight: conversation.length > 0 ? "120px" : "0",
       minHeight: conversation.length > 0 ? "auto" : "0",
       transition: "max-height 0.3s ease-in-out"
 
@@ -446,13 +446,13 @@ onClick={() => {
                 color: msg.role === "user" ? "#000000" : "#FFFFFF",
                 border: msg.role === "user" ? "none" : "1px solid #FFFFFF",
                 borderRadius: "0.75em",
-                padding: "8px 12px",
+                padding: "6px 8px",
                 maxWidth: "80%",
                 wordBreak: "break-word",
-                fontSize: "14px",
+                fontSize: "10.5px",
                 fontFamily: "Inter, sans-serif",
                 letterSpacing: "0em", // 0% horizontal spacing
-                lineHeight: "150%",
+                lineHeight: "165%",
               }}
             >
 {msg.role === "agent" ? (
@@ -505,9 +505,9 @@ onClick={() => {
         style={{
           fontFamily: "Inter, sans-serif",
           width: "100%",
-          padding: "10px 14px",
+          padding: "6px 8px",
           paddingRight: "50px", // Add space for the button
-          borderRadius: "0.75em",
+          borderRadius: "0.428rem",
           border: "none",
           outline: "none",
           fontSize: "14px",
@@ -523,9 +523,9 @@ onClick={() => {
         onMouseLeave={() => setIsSubmitHovered(false)}
         style={{
           position: "absolute",
-          right: "4px", // Position on the right side of input
-          width: "35px",
-          height: "35px", 
+          right: "6px", // Position on the right side of input
+          width: "16px",
+          height: "16px", 
           backgroundColor: isSubmitHovered ? "#818181" : "#000000",
           borderRadius: "0.75em",
           display: "flex",
@@ -543,8 +543,8 @@ onClick={() => {
             src="/arrow_upward.svg" 
             alt="Submit" 
             style={{ 
-              width: "20px", 
-              height: "20px" 
+              width: "10px", 
+              height: "10px" 
             }} 
           />
         )}
@@ -560,7 +560,7 @@ onClick={() => {
       <div
         style={{
           position: "relative",
-          height: "60px",
+          height: "50px",
           marginTop: "18px",
           display: "flex",
           justifyContent: "flex-end",
@@ -572,8 +572,8 @@ onClick={() => {
           style={{
             position: "absolute",
             right:"22%",
-            width: "40px",
-            height: "40px",
+            width: "28px",
+            height: "28px",
             borderRadius: "50%",
             backgroundColor: "#000",
             opacity: [4, 5].includes(loadingStep) || !isLoading ? 1 : 0,
@@ -586,8 +586,8 @@ onClick={() => {
         <div
           style={{
             position: "absolute",
-            width: "25px",
-            height: "25px",
+            width: "18px",
+            height: "18px",
             right:"38%",
             top:"35px",
             borderRadius: "50%",
