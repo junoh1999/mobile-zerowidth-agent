@@ -282,7 +282,7 @@ const shouldExpand = isHovered || isExpanded;
   display: "flex",
   justifyContent: "flex-end",
   paddingRight: "12px",
-  marginBottom: "5px",
+  marginBottom: "8px",
   height: "16px", // Fixed height to prevent layout shift
   alignItems: "baseline"
 }}>
@@ -523,9 +523,9 @@ onClick={() => {
         onMouseLeave={() => setIsSubmitHovered(false)}
         style={{
           position: "absolute",
-          right: "4px", // Position on the right side of input
-          width: "18px",
-          height: "18px", 
+          right: "2px", // Position on the right side of input
+          width: "21px",
+          height: "21px", 
           backgroundColor: isSubmitHovered ? "#818181" : "#000000",
           borderRadius: "4px",
           display: "flex",
