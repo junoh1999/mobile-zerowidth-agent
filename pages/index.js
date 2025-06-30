@@ -335,7 +335,7 @@ const shouldExpand = isHovered || isExpanded;
     justifyContent: "space-between",
     minHeight: "80px",
     width: shouldExpand ? "260px" : "180px",
-    marginLeft: shouldExpand ? "0px" : "80px", // Add this - pushes smaller version to the right
+    marginLeft: shouldExpand ? "0px" : "220px", // Add this - pushes smaller version to the right
     transition: "width 300ms ease, margin-left 300ms ease", // Animate both
     position: "relative",
     boxSizing: "border-box", // ADD THIS LINE
