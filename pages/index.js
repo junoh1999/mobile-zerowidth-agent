@@ -281,7 +281,7 @@ const shouldExpand = isHovered || isExpanded;
       <div style={{
   display: "flex",
   justifyContent: "flex-end",
-  paddingRight: "22px",
+  paddingRight: "12px",
   marginBottom: "3px",
   height: "16px", // Fixed height to prevent layout shift
   alignItems: "baseline"
@@ -335,8 +335,9 @@ const shouldExpand = isHovered || isExpanded;
     justifyContent: "space-between",
     minHeight: "80px",
     width: shouldExpand ? "260px" : "180px",
-    marginLeft: shouldExpand ? "0px" : "80px", // Add this - pushes smaller version to the right
-    transition: "width 300ms ease, margin-left 300ms ease", // Animate both
+ position: "absolute",  // ← CHANGE from "relative"
+    right: shouldExpand ? "0px" : "80px",  // ← REPLACE marginLeft
+    transition: "width 300ms ease, right 300ms ease",  // ← UPDATE transition
     position: "relative",
     boxSizing: "border-box", // ADD THIS LINE
   }}
