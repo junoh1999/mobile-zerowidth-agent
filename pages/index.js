@@ -287,7 +287,7 @@ const shouldExpand = isHovered || isExpanded;
   alignItems: "baseline"
 }}>
   <div style={{ 
-    fontSize: "16px", 
+    fontSize: "14px", 
     padding: "0px 0px", 
     margin: "0px 0px", 
     marginRight: "0px", // Adjust this value to change spacing between "Try:" and button
@@ -309,7 +309,7 @@ const shouldExpand = isHovered || isExpanded;
         borderRadius: "0.75em", 
         padding: "0 0 0px 3px", // Reduce this value to make button smaller
         margin: "0px 0px",
-        fontSize: "16px",
+        fontSize: "14px",
         cursor: "pointer",
         opacity: promptVisible ? 1 : 0,
         transition: "opacity 0.5s ease, color 300ms ease",
@@ -449,7 +449,7 @@ onClick={() => {
                 padding: "6px 8px",
                 maxWidth: "80%",
                 wordBreak: "break-word",
-                fontSize: "16px",
+                fontSize: "14px",
                 fontFamily: "Inter, sans-serif",
                 letterSpacing: "0em", // 0% horizontal spacing
                 lineHeight: "165%",
@@ -510,7 +510,7 @@ onClick={() => {
           borderRadius: "0.428rem",
           border: "none",
           outline: "none",
-          fontSize: "16px",
+          fontSize: "14px",
           backgroundColor: "#FFFFFF",
           boxSizing: "border-box",
           letterSpacing: "0em", // 0% horizontal spacing
